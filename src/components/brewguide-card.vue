@@ -1,7 +1,7 @@
 <template>
 
   <div class="brewguide_card"> 
-  <img class="card_image" :src="card.image"></img>
+  <img class="card_image" :src=image>
   <hr>
   <p class="brewguide_card_title">{{card.title}}</p>
   <p class="pronounce">{{card.pronounce}}</p></div>
@@ -16,7 +16,14 @@
 
 export default {
   name: 'brewguide-card',
-  props:['card']
+  props:['card'],
+  data:
+    function(){
+      return {
+        image: require(this.card.image)
+      }
+    }
+  
 }
 
 </script>

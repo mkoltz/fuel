@@ -2,7 +2,7 @@
 const cards = [
   {
     "id":"0",
-    "image":"img/machine.png",
+    "image":"assets/machine.png",
     "title":"machine 101",
     "pronounce":" "
   },
