@@ -1,7 +1,7 @@
 <template>
 <div id = "app">
-  <div class = "header">
-          <img src="img/F.png">
+      <div class = "header">
+          <img src ="/img/F.png">
           <h1>You're Ultimate Brew Guide</h1>
           <p>These guides serve as a good place to start.<br>
           Start with learning how the espresso machine works.</p>
@@ -29,7 +29,8 @@ export default {
   components: {
     brewguideCard
   },
-  data:function () {
+  data:
+    function () {
     return {
       card_list
     }

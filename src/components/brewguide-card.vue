@@ -20,9 +20,9 @@ export default {
   data:
     function(){
       return {
-        image: require(this.card.image)
+        image: require(`../img/${this.card.image}`)
       }
-    }
+    },
   
 }
 
