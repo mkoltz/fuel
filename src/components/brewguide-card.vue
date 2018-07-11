@@ -1,6 +1,6 @@
 <template>
 
-  <router-link :to="{name: 'guide', params: {id: card.key}}">
+  <router-link :to="{name: 'guide', params: {id: card.id, title: card.title, pronounce: card.pronounce}}">
     <div class="brewguide_card"> 
     <img class="card_image" :src=image>
     <hr>

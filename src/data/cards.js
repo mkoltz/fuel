@@ -12,7 +12,20 @@ const cards = [
     "key":"americano",
     "image":"americano.png",
     "title":"americano",
-    "pronounce":"es * pres * so"
+    "pronounce":"es * pres * so",
+    "description":"a drink made with Coffee that is good",
+    "sweetness":"5",
+    "caffeine":"4",
+    "steps":{
+      "step1":{
+        "title":"Measure the milk",
+        "details":"do some stuff with the milk you silly person"
+      },
+      "step2":{
+        "title":"Chocalate!",
+        "details":"do chocalate stuff"
+      }
+    }
   },
   {
     "id":"2", 

@@ -15,6 +15,10 @@
 
 }
 
+a {
+  text-decoration: none;
+}
+
 #brewguide_list{
     display: flex;
     align-content: flex-start;
