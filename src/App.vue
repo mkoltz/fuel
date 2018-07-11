@@ -1,43 +1,8 @@
 <template>
-<div id = "app">
-      <div class = "header">
-          <img src ="/static/F.png">
-          <h1>You're Ultimate Brew Guide</h1>
-          <p>These guides serve as a good place to start.<br>
-          Start with learning how the espresso machine works.</p>
-
-      </div> 
-
-     <brewguide-card
-     v-for="item in card_list"
-     v-bind:card="item"
-     v-bind:key="item.id">       
-     </brewguide-card>
-</div>
+  <div id="app">
+  <router-view/>
+  </div>
 </template>
-
-
-
-<script>
-
-import card_list from './data/cards.js';
-import brewguideCard from './components/brewguide-card.vue';
-
-
-export default {
-  name: 'app',
-  components: {
-    brewguideCard
-  },
-  data:
-    function () {
-    return {
-      card_list
-    }
-  }
-}
-
-</script>
 
 
 
@@ -48,6 +13,12 @@ export default {
   align-content: flex-start;
   flex-wrap: wrap;
 
+}
+
+#brewguide_list{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .brewguide_card{
