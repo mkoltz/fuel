@@ -12,8 +12,8 @@ const cards = [
     "key":"americano",
     "image":"americano.png",
     "title":"americano",
-    "pronounce":"es * pres * so",
-    "description":"a drink made with Coffee that is good",
+    "pronounce":"es &#183; pres &#183; so",
+    "description":"Like a caffè latte, caffè mocha is based on espresso and hot milk, but with added chocolate, typically in the form of sweet cocoa powder, although many varieties use chocolate syrup. Mochas can contain dark or milk chocolate.The name is derived from the city of Mocha, Yemen, which was one of the centers of early coffee trade.",
     "sweetness":"5",
     "caffeine":"4",
     "steps":{
@@ -32,21 +32,21 @@ const cards = [
     "key":"flat_white",
     "image":"flat_white.png",
     "title":"flat white",
-    "pronounce":"es * pres * so"
+    "pronounce":"es &#183; pres &#183; so"
   },
   {
     "id":"3", 
     "key":"cappaccino",
     "image":"cappuccino.png",
     "title":"cappaccino",
-    "pronounce":"es * pres * so"
+    "pronounce":"es &#183; pres &#183; so"
   },
   {
     "id":"4",
     "key":"espresso", 
     "image":"espresso.png",
     "title":"ESPRESSO",
-    "pronounce":"es * pres * so"
+    "pronounce":"es &#183; pres &#183; so"
   }
 ];
 
