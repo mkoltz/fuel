@@ -19,11 +19,15 @@ a {
   text-decoration: none;
 }
 
+
 #brewguide_list{
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
 }
+
+
+
 
 .brewguide_card{
   background: linear-gradient(to bottom, #f1f5f4 0%,#f1f5f4 50%,#000000 50%,white 50%,white 100%); /* W3C */
@@ -68,7 +72,6 @@ a {
     text-align: center;
     font-weight: 300;
 }
-
 
 .brewguide_card_title{
 font-family: "Open Sans";
