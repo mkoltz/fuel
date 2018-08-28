@@ -41,8 +41,15 @@ const cards = [
     "title":"cappaccino",
     "pronounce":"es &#183; pres &#183; so"
   },
+
+    {
+    "id":"4", 
+    "key":"saying_1",
+    "title":"Ways to <br> win <br> my heart",
+    "pronounce":"<ol><li>Buy me coffee</li><li>Make me coffee</li><li>Be coffee</li></ol>"
+  },
   {
-    "id":"4",
+    "id":"5",
     "key":"espresso", 
     "image":"espresso.png",
     "title":"ESPRESSO",
