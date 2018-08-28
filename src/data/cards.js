@@ -1,31 +1,22 @@
 
 const cards = [
+  
   {
-    "id":"0",
+    "id":"0", 
+    "key":"americano",
+    "image":"americano.png",
+    "title":"why a pourover",
+    "pronounce":" ",
+    "description":"Pourover coffee starts with (freshly) ground coffee, a filter, and a filter holder, often called a 'pourover dripper.' At the most basic level, pourover brewing involves pouring water over and through the grounds to extract the coffee flavors into your cup or serving vessel.",
+    "sweetness":"5",
+    "caffeine":"4",
+  },
+  {
+    "id":"1",
     "key":"machine_101",
     "image":"machine.png",
     "title":"machine 101",
     "pronounce":" "
-  },
-  {
-    "id":"1", 
-    "key":"americano",
-    "image":"americano.png",
-    "title":"americano",
-    "pronounce":"es &#183; pres &#183; so",
-    "description":"Like a caffè latte, caffè mocha is based on espresso and hot milk, but with added chocolate, typically in the form of sweet cocoa powder, although many varieties use chocolate syrup. Mochas can contain dark or milk chocolate.The name is derived from the city of Mocha, Yemen, which was one of the centers of early coffee trade.",
-    "sweetness":"5",
-    "caffeine":"4",
-    "steps":{
-      "step1":{
-        "title":"Measure the milk",
-        "details":"do some stuff with the milk you silly person"
-      },
-      "step2":{
-        "title":"Chocalate!",
-        "details":"do chocalate stuff"
-      }
-    }
   },
   {
     "id":"2", 
