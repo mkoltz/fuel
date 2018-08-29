@@ -1,6 +1,65 @@
 <template>
   <div class="home">
-    <h1>The beginning</h1>
-    <router-link to="/main" tag='button'>Get started</router-link>
+
+  	<div class = "head">
+  		<p>a good day is a caffeinated one</p>
+    <h1>Let's Fuel your day</h1>
+    <div class = "button red" style="width: 234px; height:59px;"> <p style="color:white; margin: auto;">Coming Soon</p> </div>
+  	</div>
+
+  		<div class = "image">
+  				<img src="/static/start.png">
+
+  		</div>
+
   </div>
 </template>
+
+<style>
+
+		body	{
+
+			margin: 0;
+
+		}
+
+		.home {
+			display: flex;
+			flex-direction: column;
+		}
+
+  .home p{
+				color: #eb4224;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 30pt;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+
+  .home h1{
+  	font-family:"Open Sans";
+			font-weight: bold;
+			font-size: 55px;
+			color: #000000;
+			letter-spacing: 14px;
+			text-transform: uppercase;
+			margin-top:0px;
+  }
+
+  .head {
+  	height:400px;
+  	padding-top:33px;
+  	background-color: #fbf9f5;
+  	display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+			width: 100%;
+
+
+  }
+
+
+</style> 

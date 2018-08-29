@@ -14,7 +14,7 @@
   		
      <div class = "right_col">
       
-      <div class= "description"> {{details.description}}</div>
+      <div class= "description" v-html=details.description> </div>
       <div class = "button_row">
 
         <router-link class="button back" to="/main" tag='button'>
@@ -22,10 +22,10 @@
             <p>Back</p>
         </router-link>
         
-        <router-link class="button watch" to="/main" tag='button'>
+        <a class="button watch" href="">
           <img src="/static/play_icon.png">  
           <p>Watch</p>
-        </router-link>   
+        </a>   
 
       </div>    
      </div> 
@@ -36,8 +36,17 @@
       <h1>I followed my Heart</h1>
       <p>and it led me to coffee.</p>
       <img src="/static/fuel-icon-white.png" style="width:45px;">
-    </div>    
-    
+  </div>  
+
+
+  <div class = "modal" style="display:none;">
+      <video width="1024" controls>
+        <source :src="details.video" type="video/MP4">
+      </video>
+  </div>
+
+  
+
 
    <div class="footer"></div>
 
@@ -66,11 +75,7 @@ import card_list from '../data/cards.js';
 			return{
 				details
 			}
-		},
-		created:function(){
-
 		}
-		
 
 	}
 
@@ -101,7 +106,7 @@ import card_list from '../data/cards.js';
 }
 
 #guide_hero_card{
-	background: linear-gradient(to bottom, #fbf9f5 0%,#fbf9f5 50%,#000000 50%,white 50%,white 100%); /* W3C */
+	background: linear-gradient(to bottom, #fbf9f5 0%,#fbf9f5 37%,#000000 37%,white 37%,white 100%); /* W3C */
  width: 432px;
  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
  padding:56px;
@@ -161,7 +166,7 @@ line-height: 32px;
   background-color: #38110b;
 }
 
-.watch{
+.watch, .red{
   background-color: #eb4224;
 }
 
@@ -215,6 +220,14 @@ line-height: 32px;
 .bottom_quote img{
   position: relative;
   top:27px;
+}
+
+.modal{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color:rgba(0,0,0,0.4);
 }
 
 

@@ -2,9 +2,9 @@
   
 <div id="brewguide_list">
   			<div class = "header">
-          <img src="static/fuel-icon-white.png">
+          <img src="/static/fuel-icon-white.png">
           <h1>You're Ultimate Brew Guide</h1>
-          <p>Coffee is the spark that creates a cross-cultural spark, bringing people together to discuss, collaborate, and form community.</p>
+          <p>Coffee is the fuel that creates a cross-cultural spark, bringing people together to discuss, collaborate, and form community.</p>
       </div> 
   
 
@@ -45,40 +45,40 @@
     </div>
 
     <div class = "header2">
-      <img src="static/fuel-icon-white.png" style="width:42px;">
+      <img src="/static/fuel-icon-white.png" style="width:42px;">
       <h1>Coffee 101</h1>
       <p>Whether you have been slinging espresso for years or just begining, these videos are a guide to take your skills to another level.</p> 
     </div>
 
     <brewguide-card
-       v-bind:card="card_list[0]"
-       v-bind:key="card_list[0].id">       
+       v-bind:card="card_list[6]"
+       v-bind:key="card_list[6].id">       
      </brewguide-card>
 
      <brewguide-card
-       v-bind:card="card_list[1]"
-       v-bind:key="card_list[1].id">       
+       v-bind:card="card_list[7]"
+       v-bind:key="card_list[7].id">       
      </brewguide-card>
 
      <saying-card
-       v-bind:card="card_list[2]"
-       v-bind:key="card_list[2].id">       
+       v-bind:card="card_list[8]"
+       v-bind:key="card_list[8].id">       
      </saying-card>
 
      <brewguide-card
-       v-bind:card="card_list[3]"
-       v-bind:key="card_list[3].id">       
+       v-bind:card="card_list[9]"
+       v-bind:key="card_list[9].id">       
      </brewguide-card>
 
       <saying-card
-       v-bind:card="card_list[4]"
-       v-bind:key="card_list[4].id">       
+       v-bind:card="card_list[10]"
+       v-bind:key="card_list[10].id">       
      </saying-card>
 
 
      <brewguide-card
-       v-bind:card="card_list[5]"
-       v-bind:key="card_list[5].id">       
+       v-bind:card="card_list[11]"
+       v-bind:key="card_list[11].id">       
      </brewguide-card>
 
      <div class = "footer">
