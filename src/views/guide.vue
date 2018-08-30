@@ -39,13 +39,15 @@
   </div>  
 
 
-  <div class = "modal" style="display:none;">
+  <div id = "modal" style="display:none;">
+
       <video width="1024" controls>
         <source :src="details.video" type="video/MP4">
       </video>
+  
   </div>
 
-  
+
 
 
    <div class="footer"></div>
@@ -228,6 +230,9 @@ line-height: 32px;
     top: 0;
     width: 100%;
     background-color:rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
