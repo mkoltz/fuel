@@ -22,10 +22,10 @@
             <p>Back</p>
         </router-link>
         
-        <a class="button watch" href="">
+        <div v-on:click="showModal" class="button watch"  href="">
           <img src="/static/play_icon.png">  
           <p>Watch</p>
-        </a>   
+        </div>   
 
       </div>    
      </div> 
@@ -46,7 +46,6 @@
       </video>
   
   </div>
-
 
 
 
@@ -77,7 +76,12 @@ import card_list from '../data/cards.js';
 			return{
 				details
 			}
-		}
+		},
+    methods:{
+      showModal: function(event){
+        var modal = document.getElementById('modal');
+      }
+    }
 
 	}
 
@@ -224,7 +228,7 @@ line-height: 32px;
   top:27px;
 }
 
-.modal{
+#modal{
     height: 100%;
     position: absolute;
     top: 0;
