@@ -9,7 +9,6 @@
 
   		<div class = "image">
   				<img src="/static/start.png">
-
   		</div>
 
   </div>
@@ -20,12 +19,15 @@
 		body	{
 
 			margin: 0;
+			overflow: hidden;
 
 		}
 
 		.home {
 			display: flex;
 			flex-direction: column;
+			width: 100vw;
+			height: 101vh;
 		}
 
   .home p{
@@ -49,7 +51,7 @@
   }
 
   .head {
-  	height:400px;
+  	flex-grow: 1;
   	padding-top:33px;
   	background-color: #fbf9f5;
   	display: flex;
@@ -57,8 +59,10 @@
 			width: 100%;
 			align-items: center;
 			width: 100%;
+  }
 
-
+  .home img {
+  	width:100vw;
   }
 
 
