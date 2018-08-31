@@ -2,9 +2,15 @@
   <div class="home">
 
   	<div class = "head">
-  		<p>a good day is a caffeinated one</p>
+  	<p>a good day is a caffeinated one</p>
     <h1>Let's Fuel your day</h1>
-    <div class = "button red" style="width: 234px; height:59px;"> <p style="color:white; margin: auto;">Coming Soon</p> </div>
+
+    <router-link :to="{name: 'main'}">
+      <div class = "button red" style="width: 234px; height:59px;"> 
+        <p style="color:white; margin: auto;">Get Started</p> 
+      </div>
+    </router-link>
+
   	</div>
 
   		<div class = "image">

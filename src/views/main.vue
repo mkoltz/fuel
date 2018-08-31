@@ -1,7 +1,7 @@
 <template>
   
 <div id="brewguide_list">
-  			<div class = "header">
+  			<div class = "header" style="margin-top:60px;">
           <img src="/static/fuel-icon-white.png">
           <h1>You're Ultimate Brew Guide</h1>
           <p>Coffee is the fuel that creates a cross-cultural spark, bringing people together to discuss, collaborate, and form community.</p>

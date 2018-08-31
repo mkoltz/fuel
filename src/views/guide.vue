@@ -17,10 +17,10 @@
       <div class= "description" v-html=details.description> </div>
       <div class = "button_row">
 
-        <router-link class="button back" to="/main" tag='button'>
+        <div class="button back" v-on:click="back" tag='button'>
             <img src="">  
             <p>Back</p>
-        </router-link>
+        </div>
         
         <div v-on:click="showModal" class="button watch"  href="">
           <img src="/static/play_icon.png">  
@@ -32,24 +32,28 @@
     
 		</div>
     
- <div class = "bottom_quote">
+  <div class = "bottom_quote">
       <h1>I followed my Heart</h1>
       <p>and it led me to coffee.</p>
       <img src="/static/fuel-icon-white.png" style="width:45px;">
   </div>  
 
 
-  <div id = "modal" style="display:none;">
+  <div v-on:click="hideModal" id = "modal" style="display:none;">
 
-      <video width="1024" controls>
+    <div class = "close button">
+      <p>Close</p>
+    </div>
+    <div class="video_container">
+      <video id="video" width="100%" controls>
         <source :src="details.video" type="video/MP4">
       </video>
+    </div>
   
   </div>
 
 
-
-   <div class="footer"></div>
+  <div class="footer"></div>
 
   
   </div>
@@ -78,8 +82,31 @@ import card_list from '../data/cards.js';
 			}
 		},
     methods:{
+      back: function(){
+
+        this.$router.go(-1);
+
+      },
       showModal: function(event){
         var modal = document.getElementById('modal');
+        var body = document.body;
+        var video = document.getElementById('video');
+
+        modal.style.display = "flex";
+        body.style.overflow = "hidden";
+        video.play();
+
+      },
+
+      hideModal: function(event){
+        var modal = document.getElementById('modal');
+        var body = document.body;
+        var video = document.getElementById('video');
+
+        modal.style.display = "none";
+        body.style.overflow = "visible";
+        video.pause();
+        video.currentTime = 0;
       }
     }
 
@@ -230,13 +257,35 @@ line-height: 32px;
 
 #modal{
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.7);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.video_container {
+  display: flex;
+  flex-grow: 1;
+}
+
+#video {
+  margin:auto;
+}
+
+.close{
+  color: black;
+  background-color: white;
+  height: 45px;
+  width: 75px;
+  margin:20px 20px 0 0;
+}
+
+.close p{
+  font-size: 12pt;
+  margin:auto;
 }
 
 
