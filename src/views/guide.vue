@@ -2,36 +2,30 @@
   <div class="guide">
 
   	<div class = "drink_description">
-  			<div id = "guide_hero_card">
-  				<img :src="`/static/` + $route.params.root + `/hero.png` " >
-  					
-  			<div class="rule"><hr></div>		
-  				
-  			<h1 class = "hero_card_title">{{$route.params.title}}</h1>
-  			<p class = "hero_card_pronounce" v-html="$route.params.pronounce"></p>
-  		
-  		</div>
-  		
-     <div class = "right_col">
-      
-      <div class= "description" v-html=details.description> </div>
-      <div class = "button_row">
-
-        <div class="button back" v-on:click="back" tag='button'>
-            <img src="">  
+			
+      <div id = "guide_hero_card">
+				<img :src="`/static/` + $route.params.root + `/hero.png` " >
+				<div class="rule"><hr></div>		
+				<h1 class = "hero_card_title">{{$route.params.title}}</h1>
+        <p class = "hero_card_pronounce" v-html="$route.params.pronounce"></p>
+		  </div>
+		
+      <div class = "right_col">
+        <div class= "description" v-html=details.description> </div>
+        <div class = "button_row">
+          <div class="button back" v-on:click="back" tag='button'>
             <p>Back</p>
+          </div>
+      
+          <div v-on:click="showModal" class="button watch"  href="">
+            <img src="/static/play_icon.png">  
+            <p>Watch</p>
+          </div>   
         </div>
-        
-        <div v-on:click="showModal" class="button watch"  href="">
-          <img src="/static/play_icon.png">  
-          <p>Watch</p>
-        </div>   
+      </div> 
+	  </div>
+    
 
-      </div>    
-     </div> 
-    
-		</div>
-    
   <div class = "bottom_quote">
       <h1>I followed my Heart</h1>
       <p>and it led me to coffee.</p>
@@ -83,10 +77,9 @@ import card_list from '../data/cards.js';
 		},
     methods:{
       back: function(){
-
         this.$router.go(-1);
-
       },
+
       showModal: function(event){
         var modal = document.getElementById('modal');
         var body = document.body;
@@ -95,7 +88,6 @@ import card_list from '../data/cards.js';
         modal.style.display = "flex";
         body.style.overflow = "hidden";
         video.play();
-
       },
 
       hideModal: function(event){
@@ -111,7 +103,6 @@ import card_list from '../data/cards.js';
     }
 
 	}
-
 
 
 </script>

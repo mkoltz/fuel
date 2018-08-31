@@ -8,37 +8,12 @@
       </div> 
   
 
-     <brewguide-card
-    	 v-bind:card="card_list[0]"
-     	 v-bind:key="card_list[0].id">       
-     </brewguide-card>
-
-     <brewguide-card
-       v-bind:card="card_list[1]"
-       v-bind:key="card_list[1].id">       
-     </brewguide-card>
-
-     <brewguide-card
-       v-bind:card="card_list[2]"
-       v-bind:key="card_list[2].id">       
-     </brewguide-card>
-
-     <brewguide-card
-       v-bind:card="card_list[3]"
-       v-bind:key="card_list[3].id">       
-     </brewguide-card>
-
-      <saying-card
-       v-bind:card="card_list[4]"
-       v-bind:key="card_list[4].id">       
-     </saying-card>
-
-
-     <brewguide-card
-       v-bind:card="card_list[5]"
-       v-bind:key="card_list[5].id">       
-     </brewguide-card>
-
+     <component
+       v-for="(n, index) in 6"
+       v-bind:is="card_list[index].type"
+       v-bind:card="card_list[index]"
+       v-bind:key="card_list[index].id">       
+     </component>
 
     <div class = "divider">
       <hr class = "vertical_hr"/>
@@ -50,40 +25,15 @@
       <p>Whether you have been slinging espresso for years or just begining, these videos are a guide to take your skills to another level.</p> 
     </div>
 
-    <brewguide-card
-       v-bind:card="card_list[6]"
-       v-bind:key="card_list[6].id">       
-     </brewguide-card>
-
-     <brewguide-card
-       v-bind:card="card_list[7]"
-       v-bind:key="card_list[7].id">       
-     </brewguide-card>
-
-     <saying-card
-       v-bind:card="card_list[8]"
-       v-bind:key="card_list[8].id">       
-     </saying-card>
-
-     <brewguide-card
-       v-bind:card="card_list[9]"
-       v-bind:key="card_list[9].id">       
-     </brewguide-card>
-
-      <saying-card
-       v-bind:card="card_list[10]"
-       v-bind:key="card_list[10].id">       
-     </saying-card>
-
-
-     <brewguide-card
-       v-bind:card="card_list[11]"
-       v-bind:key="card_list[11].id">       
-     </brewguide-card>
+    <component
+       v-for="(n, index) in 6"
+       v-bind:is="card_list[index+6].type"
+       v-bind:card="card_list[index+6]"
+       v-bind:key="card_list[index+6].id">       
+     </component>
 
      <div class = "footer">
        
-
      </div>
 
 </div>
