@@ -87,6 +87,7 @@ import card_list from '../data/cards.js';
 
         modal.style.display = "flex";
         body.style.overflow = "hidden";
+        idle.stop();
         video.play();
       },
 
@@ -98,6 +99,7 @@ import card_list from '../data/cards.js';
         modal.style.display = "none";
         body.style.overflow = "visible";
         video.pause();
+        idle.start();
         video.currentTime = 0;
       }
     }

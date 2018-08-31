@@ -32,9 +32,7 @@
        v-bind:key="card_list[index+6].id">       
      </component>
 
-     <div class = "footer">
-       
-     </div>
+     <div class = "footer"></div>
 
 </div>
 
@@ -55,6 +53,11 @@ export default {
   data:function () {
     return {
       card_list
+    }
+  },
+  methods:{
+    created: function(){
+      idle.start();
     }
   }
 }

@@ -5,7 +5,7 @@
   	<p>a good day is a caffeinated one</p>
     <h1>Let's Fuel your day</h1>
 
-    <router-link :to="{name: 'main'}">
+    <router-link :to="{name: 'main'}" @click.native="startTime">
       <div class = "button red" style="width: 234px; height:59px;"> 
         <p style="color:white; margin: auto;">Get Started</p> 
       </div>
@@ -19,6 +19,18 @@
 
   </div>
 </template>
+
+<script>
+  
+  export default {
+    methods:{
+      startTime: function (){
+        idle.start();
+      }
+    }
+  }
+
+</script>
 
 <style>
 
