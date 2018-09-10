@@ -7,9 +7,9 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>fuel_app_v2</title>
 
-    <link rel="manifest" href="/static/manifest.json">
-    <!--<link rel="manifest" href="/manifest.json">-->
-    <!--<script src = "/idle.js"></script> -->
+    <!--<link rel="manifest" href="/static/manifest.json">-->
+    <link rel="manifest" href="/manifest.json">
+    <script src = "/idle.js"></script> 
 
   </head>
 
@@ -21,21 +21,21 @@
     <!-- built files will be auto injected -->
 
     <script>
-      //if('serviceWorker' in navigator) {
-        //navigator.serviceWorker
-          //.register('/sw.js')
-          //.then(function() { console.log("Service Worker Registered"); });
-     // }
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/sw.js')
+          .then(function() { console.log("Service Worker Registered"); });
+      }
 
-    //  var returnHome = function(){
-     //   document.location.href="/";
-     //   idle.stop();
-    //  };
+      var returnHome = function(){
+        document.location.href="/";
+        idle.stop();
+      };
 
-    //  var idle = new Idle({
-     //   onAway: returnHome,
-    //    awayTimeout: 300000
-    //  }).stop();
+      var idle = new Idle({
+        onAway: returnHome,
+        awayTimeout: 300000
+      }).stop();
 
     </script>
   </body>
