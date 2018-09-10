@@ -9,7 +9,7 @@
 
     <link rel="manifest" href="/static/manifest.json">
     <!--<link rel="manifest" href="/manifest.json">-->
-    <script src = "/idle.js"></script>
+    <!--<script src = "/idle.js"></script> -->
 
   </head>
 
@@ -27,15 +27,15 @@
           //.then(function() { console.log("Service Worker Registered"); });
      // }
 
-      var returnHome = function(){
-        document.location.href="/";
-        idle.stop();
-      };
+    //  var returnHome = function(){
+     //   document.location.href="/";
+     //   idle.stop();
+    //  };
 
-      var idle = new Idle({
-        onAway: returnHome,
-        awayTimeout: 300000
-      }).stop();
+    //  var idle = new Idle({
+     //   onAway: returnHome,
+    //    awayTimeout: 300000
+    //  }).stop();
 
     </script>
   </body>
